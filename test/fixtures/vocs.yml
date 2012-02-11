@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  german: MyString
+  wylie: MyString
+  source_id: 1
+  grammar_id: 1
+  category_id: 1
+  info: MyText
+
+two:
+  german: MyString
+  wylie: MyString
+  source_id: 1
+  grammar_id: 1
+  category_id: 1
+  info: MyText

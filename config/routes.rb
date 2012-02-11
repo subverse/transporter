@@ -1,4 +1,12 @@
 Transporter::Application.routes.draw do
+  resources :vocs
+
+  resources :sources
+
+  resources :grammars
+
+  resources :categories
+
   resources :voxes
 
   resources :grms
