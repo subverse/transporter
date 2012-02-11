@@ -1,0 +1,37 @@
+<h1>Listing voxes</h1>
+
+<table>
+  <tr>
+    <th>German</th>
+    <th>Wylie</th>
+    <th>Grm</th>
+    <th>Cat</th>
+    <th>Note</th>
+    <th>Temp1</th>
+    <th>Length</th>
+    <th>Src</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @voxes.each do |vox| %>
+  <tr>
+    <td><%= vox.german %></td>
+    <td><%= vox.wylie %></td>
+    <td><%= vox.grm %></td>
+    <td><%= vox.cat %></td>
+    <td><%= vox.note %></td>
+    <td><%= vox.temp1 %></td>
+    <td><%= vox.length %></td>
+    <td><%= vox.src %></td>
+    <td><%= link_to 'Show', vox %></td>
+    <td><%= link_to 'Edit', edit_vox_path(vox) %></td>
+    <td><%= link_to 'Destroy', vox, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vox', new_vox_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@grm) do |f| %>
+  <% if @grm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grm.errors.count, "error") %> prohibited this grm from being saved:</h2>
+
+      <ul>
+      <% @grm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :grm %><br />
+    <%= f.text_field :grm %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

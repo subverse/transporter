@@ -1,0 +1,49 @@
+<%= form_for(@vox) do |f| %>
+  <% if @vox.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vox.errors.count, "error") %> prohibited this vox from being saved:</h2>
+
+      <ul>
+      <% @vox.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :german %><br />
+    <%= f.text_field :german %>
+  </div>
+  <div class="field">
+    <%= f.label :wylie %><br />
+    <%= f.text_field :wylie %>
+  </div>
+  <div class="field">
+    <%= f.label :grm %><br />
+    <%= f.text_field :grm %>
+  </div>
+  <div class="field">
+    <%= f.label :cat %><br />
+    <%= f.text_field :cat %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :temp1 %><br />
+    <%= f.number_field :temp1 %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.number_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :src %><br />
+    <%= f.text_field :src %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

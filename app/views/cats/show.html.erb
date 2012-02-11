@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cat:</b>
+  <%= @cat.cat %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @cat.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_cat_path(@cat) %> |
+<%= link_to 'Back', cats_path %>

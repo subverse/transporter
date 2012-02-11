@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  german: MyString
+  wylie: MyString
+  grm: MyString
+  cat: MyString
+  note: MyText
+  temp1: 1
+  length: 1
+  src: MyString
+
+two:
+  german: MyString
+  wylie: MyString
+  grm: MyString
+  cat: MyString
+  note: MyText
+  temp1: 1
+  length: 1
+  src: MyString
